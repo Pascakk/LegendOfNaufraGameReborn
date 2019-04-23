@@ -14,13 +14,12 @@
 int main()
 {
 	//police d'écriture
-	/*
+
 	sf::Font font;
 	if (!font.loadFromFile("dpcomic.ttf"))
 	{
 		// erreur...
 	}
-	*/
 	//elements du HUD
 	sf::Sprite lifeBar;
 	sf::Texture lifeBar_texture;
@@ -48,7 +47,7 @@ int main()
 	lifeBar_blue.setPosition((lifeBar.getPosition().x + 82), lifeBar.getPosition().y + 47);
 	lifeBar_blue.setFillColor(sf::Color::Blue);
 
-	/*
+
 	sf::Text posx("x = ", font, 25);
 	posx.setFillColor(sf::Color::Black);
 	posx.setPosition(650, 2);
@@ -58,7 +57,7 @@ int main()
 	sf::Text MODE("mode exploration", font, 30);
 	MODE.setFillColor(sf::Color::Blue);
 	MODE.setPosition(5, 0);
-	*/
+
 
 	//paramètrage de la fenêtre
 	int resoX(800);
@@ -217,14 +216,14 @@ int main()
 
 		//HUD//
 		window.setView(GUI);
-		//window.draw(MODE);
+		window.draw(MODE);
 		if (carte.getCurrentCharac()->getMode() == "exploration")
 		{
 			//texte
-			/*
+
 			window.draw(posx);
 			window.draw(posy);
-			*/
+
 			//affichage minimap
 			window.setView(minimap);
 			for (int i(0); i < allTile.size(); i++)
