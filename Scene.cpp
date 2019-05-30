@@ -8,6 +8,8 @@ Scene::Scene(std::string fichier_tilemap, Character* currentCharac) : m_fichier_
     m_pTabEntite[0]->test_poly();
     loadEntiteFile();
     m_pTabTuile = m_tileMap->getTabTuile();
+    m_visible = true;
+    m_active = true;
 }
 
 Scene::~Scene()
@@ -147,6 +149,27 @@ void Scene::loadEntiteFile()
 		std::cout << "Impossible d'ouvrir le fichier des entites" << std::endl;
 	}
 }
+
+bool Scene::isVisible()
+{
+    return m_visible;
+}
+
+bool Scene::isActive()
+{
+    return m_active;
+}
+
+void Scene::setVisible(bool value)
+{
+    m_visible = value;
+}
+
+void Scene::setActive(bool value)
+{
+    m_active = value;
+}
+
 
 
 

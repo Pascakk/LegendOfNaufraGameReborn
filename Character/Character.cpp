@@ -31,6 +31,7 @@ std::string Character::getMode()
 //met � jour la position du personnage en fonction de sa vitesse et des �v�nements clavier
 void Character::update(float dt)
 {
+    this->m_scene->addEntiteMoved(this);
     std::vector<Entite*> allEntite = m_scene->getTabEntite();
 	m_walkInput.x = 0;
 	m_walkInput.y = 0;
