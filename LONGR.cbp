@@ -13,6 +13,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="DATA/Class" />
+					<Add directory="../LegendOfNaufraGameReborn" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -28,6 +31,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="DATA/Class" />
+					<Add directory="../LegendOfNaufraGameReborn" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -44,39 +50,46 @@
 		<Linker>
 			<Add directory="D:/DEV/SFML-2.5.1/lib" />
 		</Linker>
-		<Unit filename="DATA/Class/AnimatedSprite.cpp" />
-		<Unit filename="DATA/Class/AnimatedSprite.h" />
-		<Unit filename="DATA/Class/EntiteFactory.cpp" />
-		<Unit filename="DATA/Class/EntiteFactory.h" />
-		<Unit filename="DATA/Class/Entite/Character/Baba.cpp" />
-		<Unit filename="DATA/Class/Entite/Character/Baba.h" />
-		<Unit filename="DATA/Class/Entite/Character/Character.cpp" />
-		<Unit filename="DATA/Class/Entite/Character/Character.h" />
-		<Unit filename="DATA/Class/Entite/Decors/Arbre.cpp" />
-		<Unit filename="DATA/Class/Entite/Decors/Arbre.h" />
-		<Unit filename="DATA/Class/Entite/Decors/Decor.cpp" />
-		<Unit filename="DATA/Class/Entite/Decors/Decor.h" />
-		<Unit filename="DATA/Class/Entite/Decors/Echoppe.cpp" />
-		<Unit filename="DATA/Class/Entite/Decors/Echoppe.h" />
-		<Unit filename="DATA/Class/Entite/Decors/Maison.cpp" />
-		<Unit filename="DATA/Class/Entite/Decors/Maison.h" />
-		<Unit filename="DATA/Class/Entite/Entite.cpp" />
-		<Unit filename="DATA/Class/Entite/Entite.h" />
-		<Unit filename="DATA/Class/Entite/Foes/Foes.cpp" />
-		<Unit filename="DATA/Class/Entite/Foes/Foes.h" />
-		<Unit filename="DATA/Class/Entite/Foes/Papy.cpp" />
-		<Unit filename="DATA/Class/Entite/Foes/Papy.h" />
-		<Unit filename="DATA/Class/Entite/Foes/Sbire.cpp" />
-		<Unit filename="DATA/Class/Entite/Foes/Sbire.h" />
-		<Unit filename="DATA/Class/Hitbox.cpp" />
-		<Unit filename="DATA/Class/Hitbox.h" />
-		<Unit filename="DATA/Class/Terrain/ElementGraphique.cpp" />
-		<Unit filename="DATA/Class/Terrain/ElementGraphique.h" />
-		<Unit filename="DATA/Class/Terrain/TileMap.cpp" />
-		<Unit filename="DATA/Class/Terrain/TileMap.h" />
-		<Unit filename="DATA/Class/Terrain/Tuile.cpp" />
-		<Unit filename="DATA/Class/Terrain/Tuile.h" />
-		<Unit filename="link.h" />
+		<Unit filename="AnimatedSprite.cpp" />
+		<Unit filename="AnimatedSprite.h" />
+		<Unit filename="Character/Baba.cpp" />
+		<Unit filename="Character/Baba.h" />
+		<Unit filename="Character/Character.cpp" />
+		<Unit filename="Character/Character.h" />
+		<Unit filename="Decors/Arbre.cpp" />
+		<Unit filename="Decors/Arbre.h" />
+		<Unit filename="Decors/Decor.cpp" />
+		<Unit filename="Decors/Decor.h" />
+		<Unit filename="Decors/Echoppe.cpp" />
+		<Unit filename="Decors/Echoppe.h" />
+		<Unit filename="Decors/Maison.cpp" />
+		<Unit filename="Decors/Maison.h" />
+		<Unit filename="Entite.cpp" />
+		<Unit filename="Entite.h" />
+		<Unit filename="EntiteFactory.cpp" />
+		<Unit filename="EntiteFactory.h" />
+		<Unit filename="Foes/Foes.cpp" />
+		<Unit filename="Foes/Foes.h" />
+		<Unit filename="Foes/Papy.cpp" />
+		<Unit filename="Foes/Papy.h" />
+		<Unit filename="Foes/Sbire.cpp" />
+		<Unit filename="Foes/Sbire.h" />
+		<Unit filename="GameHandler.cpp" />
+		<Unit filename="GameHandler.h" />
+		<Unit filename="Hitbox.cpp" />
+		<Unit filename="Hitbox.h" />
+		<Unit filename="InputManager.cpp" />
+		<Unit filename="InputManager.h" />
+		<Unit filename="Interface/Interface.cpp" />
+		<Unit filename="Interface/Interface.h" />
+		<Unit filename="Scene.cpp" />
+		<Unit filename="Scene.h" />
+		<Unit filename="TextureManager.cpp" />
+		<Unit filename="TextureManager.h" />
+		<Unit filename="TileMap.cpp" />
+		<Unit filename="TileMap.h" />
+		<Unit filename="Tuile.cpp" />
+		<Unit filename="Tuile.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

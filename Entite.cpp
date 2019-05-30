@@ -1,8 +1,8 @@
 #include "Entite.h"
 #include <iostream>
 
-Entite::Entite(float px, float py, int textRect_width, int textRect_height, int textRect_top, int textRect_left, int hitbox_x, int hitbox_y, int hitbox_largeur, int hitbox_hauteur, std::string texture) :
-	AnimatedSprite(textRect_width,  textRect_height,  textRect_top,  textRect_left), m_position(px,py),  m_speed(0,0)
+Entite::Entite(float px, float py, int textRect_width, int textRect_height, int textRect_top, int textRect_left, int hitbox_x, int hitbox_y, int hitbox_largeur, int hitbox_hauteur, std::string texture, Scene* scene) :
+	AnimatedSprite(textRect_width,  textRect_height,  textRect_top,  textRect_left), m_position(px,py),  m_speed(0,0), m_scene(scene)
 {
 	hitbox = new Hitbox(px, py, hitbox_x, hitbox_y, hitbox_largeur,  hitbox_hauteur, textRect_height); //20, 50 , 20 , 10
 	hurtbox = new Hitbox(px, py, 0, 0, 0, 0, textRect_height);
@@ -19,9 +19,9 @@ Entite::Entite(float px, float py, int textRect_width, int textRect_height, int 
 	m_center.y = py + (m_length / 2);
 }
 
-void Entite::update(float dt, sf::Vector2f posJoueur)
+Entite::Entite() : AnimatedSprite()
 {
-
+    //Constructeur temporaire pour les Tuiles
 }
 
 Hitbox* Entite::getHitBox() const
@@ -131,6 +131,21 @@ void Entite::applySpeed(float dt)
 	//reposionnement de l'entité (+= vitesse*temps)
 	m_position.x += m_speed.x * dt;
 	m_position.y += m_speed.y * dt;
+}
+
+std::string Entite::getType() const
+{
+    return m_type;
+}
+
+void Entite::test_poly() const
+{
+    std::cout << "Je suis une Entite" << std::endl;
+}
+
+void Entite::setScene(Scene* scene)
+{
+    m_scene = scene;
 }
 
 Entite::~Entite()

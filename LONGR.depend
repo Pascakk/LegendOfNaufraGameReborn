@@ -411,19 +411,15 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1556038811 source:d:\dev\projets\legendofnaufragamereborn\main.cpp
+1559247721 source:d:\dev\projets\legendofnaufragamereborn\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	<string>
-	"DATA/Class/Terrain/TileMap.h"
-	"DATA/Class/Terrain/ElementGraphique.h"
-	"DATA/Class/Entite/Character/Baba.h"
-	"DATA/Class/Hitbox.h"
-	"DATA/Class/Entite/Decors/Maison.h"
-	"DATA/Class/Entite/Decors/Arbre.h"
-	"DATA/Class/Entite/Decors/Echoppe.h"
-	"DATA/Class/Entite/Foes/Papy.h"
-	"DATA/Class/Entite/Foes/Sbire.h"
+	"Entite.h"
+	"TileMap.h"
+	"Scene.h"
+	"Character/Baba.h"
+	"EntiteFactory.h"
 
 1556037553 d:\dev\projets\legendofnaufragamereborn\data\class\terrain\tilemap.h
 	<SFML/Graphics.hpp>
@@ -443,19 +439,19 @@
 1556037553 d:\dev\projets\legendofnaufragamereborn\data\class\terrain\elementgraphique.h
 	"SFML/Graphics.hpp"
 
-1556037553 d:\dev\projets\legendofnaufragamereborn\data\class\entite\entite.h
+1556530757 d:\dev\projets\legendofnaufragamereborn\data\class\entite\entite.h
 	"../AnimatedSprite.h"
 	"../Hitbox.h"
 
-1556037553 d:\dev\projets\legendofnaufragamereborn\data\class\animatedsprite.h
+1556530757 d:\dev\projets\legendofnaufragamereborn\data\class\animatedsprite.h
 	"SFML/Graphics/Sprite.hpp"
 	"SFML/Graphics.hpp"
 
-1556037553 d:\dev\projets\legendofnaufragamereborn\data\class\hitbox.h
+1556530757 d:\dev\projets\legendofnaufragamereborn\data\class\hitbox.h
 	"SFML/Graphics.hpp"
 	<iostream>
 
-1556037553 d:\dev\projets\legendofnaufragamereborn\data\class\entite\character\character.h
+1556530757 d:\dev\projets\legendofnaufragamereborn\data\class\entite\character\character.h
 	"SFML/Graphics.hpp"
 	"../Entite.h"
 	<iostream>
@@ -495,14 +491,13 @@
 	"Foes.h"
 	<iostream>
 
-1539620129 source:d:\dev\projets\legendofnaufragamereborn\animatedsprite.cpp
+1559234326 source:d:\dev\projets\legendofnaufragamereborn\animatedsprite.cpp
 	"AnimatedSprite.h"
-
-1539620129 d:\dev\projets\legendofnaufragamereborn\animatedsprite.h
-	<SFML/Graphics.hpp>
 	<iostream>
+
+1559245897 d:\dev\projets\legendofnaufragamereborn\animatedsprite.h
 	"SFML/Graphics/Sprite.hpp"
-	<string>
+	"SFML/Graphics.hpp"
 
 1539620129 source:d:\dev\projets\legendofnaufragamereborn\character.cpp
 	"Character.h"
@@ -513,54 +508,195 @@
 	<string>
 	"AnimatedSprite.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\animatedsprite.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\animatedsprite.cpp
 	"AnimatedSprite.h"
 	<iostream>
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\character\baba.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\character\baba.cpp
 	"Baba.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\character\character.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\character\character.cpp
 	"Character.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\arbre.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\arbre.cpp
 	"Arbre.h"
 
 1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\decor.cpp
 	"Decor.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\echoppe.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\echoppe.cpp
 	"Echoppe.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\maison.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\decors\maison.cpp
 	"Maison.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\entite.cpp
+1556888642 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\entite.cpp
 	"Entite.h"
 	<iostream>
 
 1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\foes\foes.cpp
 	"Foes.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\foes\papy.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\foes\papy.cpp
 	"Papy.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\foes\sbire.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\entite\foes\sbire.cpp
 	"Sbire.h"
 
 1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\entitefactory.cpp
 	"EntiteFactory.h"
 	<iostream>
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\hitbox.cpp
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\data\class\hitbox.cpp
 	"Hitbox.h"
 
 1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\terrain\elementgraphique.cpp
 	"ElementGraphique.h"
 
-1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\terrain\tilemap.cpp
-	"TIleMap.h"
+1558343989 source:d:\dev\projets\legendofnaufragamereborn\data\class\terrain\tilemap.cpp
+	"TileMap.h"
 
 1556037553 source:d:\dev\projets\legendofnaufragamereborn\data\class\terrain\tuile.cpp
 	"Tuile.h"
+
+1556889023 source:d:\dev\projets\legendofnaufragamereborn\data\class\scene.cpp
+	"Scene.h"
+
+1556888950 d:\dev\projets\legendofnaufragamereborn\data\class\scene.h
+
+1559245328 source:d:\dev\projets\legendofnaufragamereborn\character\baba.cpp
+	"Baba.h"
+
+1559245645 d:\dev\projets\legendofnaufragamereborn\character\baba.h
+	"Character.h"
+
+1559245240 d:\dev\projets\legendofnaufragamereborn\character\character.h
+	"SFML/Graphics.hpp"
+	"../Entite.h"
+	<iostream>
+
+1559247513 d:\dev\projets\legendofnaufragamereborn\entite.h
+	"AnimatedSprite.h"
+	"Hitbox.h"
+
+1556530757 d:\dev\projets\legendofnaufragamereborn\hitbox.h
+	"SFML/Graphics.hpp"
+	<iostream>
+
+1559246848 source:d:\dev\projets\legendofnaufragamereborn\character\character.cpp
+	"Character.h"
+	"../Scene.h"
+
+1559245338 source:d:\dev\projets\legendofnaufragamereborn\decors\arbre.cpp
+	"Arbre.h"
+
+1559245654 d:\dev\projets\legendofnaufragamereborn\decors\arbre.h
+	"Decor.h"
+
+1559244351 d:\dev\projets\legendofnaufragamereborn\decors\decor.h
+	"../Entite.h"
+
+1559244115 source:d:\dev\projets\legendofnaufragamereborn\decors\decor.cpp
+	"Decor.h"
+
+1559245349 source:d:\dev\projets\legendofnaufragamereborn\decors\echoppe.cpp
+	"Echoppe.h"
+
+1559245661 d:\dev\projets\legendofnaufragamereborn\decors\echoppe.h
+	"Decor.h"
+
+1559245370 source:d:\dev\projets\legendofnaufragamereborn\decors\maison.cpp
+	"Maison.h"
+
+1559245665 d:\dev\projets\legendofnaufragamereborn\decors\maison.h
+	"Decor.h"
+
+1559245303 source:d:\dev\projets\legendofnaufragamereborn\entite.cpp
+	"Entite.h"
+	<iostream>
+
+1559244141 source:d:\dev\projets\legendofnaufragamereborn\foes\foes.cpp
+	"Foes.h"
+
+1559244146 d:\dev\projets\legendofnaufragamereborn\foes\foes.h
+	"../Entite.h"
+
+1559247330 source:d:\dev\projets\legendofnaufragamereborn\foes\papy.cpp
+	"Papy.h"
+	"../Scene.h"
+
+1559246502 d:\dev\projets\legendofnaufragamereborn\foes\papy.h
+	"Foes.h"
+	<iostream>
+
+1559245392 source:d:\dev\projets\legendofnaufragamereborn\foes\sbire.cpp
+	"Sbire.h"
+
+1559245679 d:\dev\projets\legendofnaufragamereborn\foes\sbire.h
+	"Foes.h"
+	<iostream>
+
+1559233524 source:d:\dev\projets\legendofnaufragamereborn\gamehandler.cpp
+	"GameHandler.h"
+
+1559244641 d:\dev\projets\legendofnaufragamereborn\gamehandler.h
+
+1559246916 source:d:\dev\projets\legendofnaufragamereborn\entitefactory.cpp
+	"EntiteFactory.h"
+	<iostream>
+
+1559246897 d:\dev\projets\legendofnaufragamereborn\entitefactory.h
+	<string>
+	"Character/Baba.h"
+	"Decors/Arbre.h"
+	"Decors/Maison.h"
+	"Decors/Echoppe.h"
+	"Foes/Papy.h"
+	"Foes/Sbire.h"
+
+1556530757 source:d:\dev\projets\legendofnaufragamereborn\hitbox.cpp
+	"Hitbox.h"
+
+1559233543 source:d:\dev\projets\legendofnaufragamereborn\inputmanager.cpp
+	"InputManager.h"
+
+1559244653 d:\dev\projets\legendofnaufragamereborn\inputmanager.h
+
+1559247766 source:d:\dev\projets\legendofnaufragamereborn\scene.cpp
+	"Scene.h"
+
+1559246250 d:\dev\projets\legendofnaufragamereborn\scene.h
+	"TileMap.h"
+	"Entite.h"
+
+1559233560 source:d:\dev\projets\legendofnaufragamereborn\texturemanager.cpp
+	"TextureManager.h"
+
+1559244648 d:\dev\projets\legendofnaufragamereborn\texturemanager.h
+
+1559244160 source:d:\dev\projets\legendofnaufragamereborn\interface\interface.cpp
+	"Interface.h"
+
+1559245482 d:\dev\projets\legendofnaufragamereborn\interface\interface.h
+	"../Entite.h"
+
+1559246969 source:d:\dev\projets\legendofnaufragamereborn\tuile.cpp
+	"Tuile.h"
+
+1559246948 d:\dev\projets\legendofnaufragamereborn\tuile.h
+	<SFML/Graphics.hpp>
+	"Entite.h"
+
+1559237962 source:d:\dev\projets\legendofnaufragamereborn\tilemap.cpp
+	"TileMap.h"
+
+1559246135 d:\dev\projets\legendofnaufragamereborn\tilemap.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<iostream>
+	<fstream>
+	<string>
+	"Tuile.h"
+	"Character/Character.h"
+	"EntiteFactory.h"
 
