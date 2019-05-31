@@ -5,7 +5,7 @@ Sbire::Sbire(float px, float py, Scene* scene): Foes(px, py, 50, 50, 0, 0, 10, 0
 
 }
 
-void Sbire::update(float dt, sf::Vector2f posJoueur)
+void Sbire::update(float dt)
 {
 	if (m_state == "patrol")
 	{

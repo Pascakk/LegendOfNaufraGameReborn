@@ -6,6 +6,8 @@
 #include "Scene.h"
 #include "Character/Baba.h"
 #include "EntiteFactory.h"
+#include "GameHandler.h"
+#include "InputManager.h"
 
 int main()
 {
@@ -16,12 +18,11 @@ int main()
     sf::RenderStates states;
 
 	sf::Vector2f center; //centre de l'écran
-	int xborder(1500); //limites de la map (temporaire
-	int yborder(1500);
 
     Character* baba = EntiteFactory::createCharacter(10, 10, nullptr, "Baba");
-	Scene scene_depart("tileset0_doc.txt", baba);
-    baba->setScene(&scene_depart);
+    GameHandler gameHandler(&window);
+    InputManager inputManager(&gameHandler);
+	gameHandler.addScene("tileset0_doc.txt", baba);
 
 	sf::Clock clock;
 	sf::View camera;
@@ -43,8 +44,8 @@ int main()
 
 		//mise à jour de la scène
 		window.clear(sf::Color::White);
-        scene_depart.draw(&window);
-        scene_depart.update(dt);
+        gameHandler.update(dt);
+        gameHandler.draw();
 		window.display();
 	}
 

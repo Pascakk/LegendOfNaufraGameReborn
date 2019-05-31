@@ -1,6 +1,6 @@
 #include "InputManager.h"
 
-InputManager::InputManager()
+InputManager::InputManager(GameHandler* gameHandler) : m_gameHandler(gameHandler)
 {
     //ctor
 }
